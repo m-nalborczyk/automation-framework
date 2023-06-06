@@ -88,9 +88,8 @@ public class Contact_Us_Steps {
     }
 
     @When("I click on the submit button")
-    public void i_click_on_the_submit_button() throws InterruptedException {
+    public void i_click_on_the_submit_button()  {
         driver.findElement(By.xpath("//input[@value='SUBMIT']")).click();
-        Thread.sleep(5000);
 
     }
     @Then("I should be presented with a successful contact us submission message")
