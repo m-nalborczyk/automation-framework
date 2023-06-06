@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2fe2569-f591-4854-ba5e-3e146dc02b8f" name="Changes" comment="">
+    <list default="true" id="d2fe2569-f591-4854-ba5e-3e146dc02b8f" name="Changes" comment="commit Login.feature">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +76,26 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Validate Successful Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="automation-framework" />
+      <option name="NAME_FILTER" value="^Validate Successful Login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Validate Successful Submission - Specific Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
@@ -134,6 +157,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
       <item itemvalue="Cucumber Java.Feature: Contact_Us" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Unique Data" />
@@ -142,6 +166,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Unique Data" />
         <item itemvalue="Cucumber Java.Feature: Contact_Us" />
@@ -199,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686066474684</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit reports creation in MainRunner.java">
+      <created>1686069185249</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686069185249</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +252,8 @@
     <MESSAGE value="commit implementing step definitions" />
     <MESSAGE value="commit implementing step definitions for specific data" />
     <MESSAGE value="commit MainRunner.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit MainRunner.java" />
+    <MESSAGE value="commit reports creation in MainRunner.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit reports creation in MainRunner.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
