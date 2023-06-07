@@ -36,11 +36,19 @@ public class Login_Steps {
     driver.get("https://www.webdriveruniversity.com/Login-Portal/index.html?");
     }
     @When("I enter a username {}")
-    public void i_enter_a_correct_username(String username) {
+    public void i_enter_a_username(String username) {
+        driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
+    }
+    @When("I enter an outlined username {}")
+    public void i_enter_an_outlined_username(String username) {
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
     }
     @When("I enter a password {}")
     public void i_enter_a_password(String password) {
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
+    }
+    @When("I enter an outlined password {}")
+    public void i_enter_an_outlined_password(String password) {
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
     }
     @When("I click on login button")
@@ -52,29 +60,33 @@ public class Login_Steps {
     public void i_should_be_presented_with_a_successful_validation_info() {
         // Switching to the alert popup
         Alert alert = driver.switchTo().alert();
-
         // Getting the actual message displayed in the popup
         String actualMessage = alert.getText();
-
         // Closing the alert popup
         alert.accept();
-
         // Asserting the expected and actual messages
         Assert.assertEquals(actualMessage, "validation succeeded");
-
     }
     @Then("I should be presented with a unsuccessful validation info")
     public void i_should_be_presented_with_a_unsuccessful_validation_info() {
         // Switching to the alert popup
         Alert alert = driver.switchTo().alert();
-
         // Getting the actual message displayed in the popup
         String actualMessage = alert.getText();
-
         // Closing the alert popup
         alert.accept();
-
         // Asserting the expected and actual messages
         Assert.assertEquals(actualMessage, "validation failed");
+    }
+    @Then("I should be presented with a validation message {}")
+    public void i_should_be_presented_with_a_validation_msg(String validationMessage) {
+        // Switching to the alert popup
+        Alert alert = driver.switchTo().alert();
+        // Getting the actual message displayed in the popup
+        String actualMessage = alert.getText();
+        // Closing the alert popup
+        alert.accept();
+        // Asserting the expected and actual messages
+        Assert.assertEquals(actualMessage, validationMessage);
     }
 }
