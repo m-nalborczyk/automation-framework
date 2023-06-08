@@ -1,4 +1,4 @@
-@login
+@login @regression
 Feature: WebDriver University - Login Page
 
   Background:
@@ -16,6 +16,7 @@ Feature: WebDriver University - Login Page
     And I click on login button
     Then I should be presented with a unsuccessful validation info
 
+  @target-this
   Scenario Outline: Validate Successful & Unsuccessful Login
     When I enter an outlined username <username>
     And I enter an outlined password <password>
@@ -27,4 +28,4 @@ Feature: WebDriver University - Login Page
       | webdriver         | webdriver123      | validation succeeded |
       | webdriver         | incorrectPassword | validation failed    |
       | incorrectUsername | webdriver123      | validation failed    |
-      | anyInput          | anyInput          | validation failed    |
+      | incorrectUsername | incorrectUsername | validation failed    |

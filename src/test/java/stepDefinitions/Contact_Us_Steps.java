@@ -1,7 +1,5 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,16 +7,17 @@ import io.cucumber.testng.CucumberOptions;
 import net.bytebuddy.utility.RandomString;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import stepDefinitions.base.Hooks;
+
+import static driver.DriverFactory.getDriver;
 
 
-public class Contact_Us_Steps {
-    private WebDriver driver;
+public class Contact_Us_Steps extends Hooks {
+
+    private WebDriver driver = getDriver();
 
     //generating random number to be used to ensure unique data filled in
     public String generateRandomNumber (int length){
@@ -27,20 +26,6 @@ public class Contact_Us_Steps {
     //generating random String to be used to ensure unique data filled in
     public String generateRandomString (int length){
         return RandomStringUtils.randomAlphabetic(length);
-    }
-
-    @Before("@contact-us")
-    public void setup (){
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/drivers/chromedriver.exe");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        chromeOptions.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
-    }
-    @After("@contact-us")
-    public void tearDown(){
-        driver.quit();
     }
 
     @Given("I access webdriver university contact us page")

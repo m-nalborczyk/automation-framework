@@ -1,35 +1,19 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import stepDefinitions.base.Hooks;
 
-public class Login_Steps {
+import static driver.DriverFactory.getDriver;
 
-    private WebDriver driver;
+public class Login_Steps extends Hooks {
 
-    @Before("@login")
-    public void setup (){
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/drivers/chromedriver.exe");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        chromeOptions.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
-    }
-    @After("@login")
-    public void tearDown(){
-        driver.quit();
-    }
+    private WebDriver driver = getDriver();
 
     @Given("I access webdriver university login page")
     public void i_access_webdriver_university_login_page() {
