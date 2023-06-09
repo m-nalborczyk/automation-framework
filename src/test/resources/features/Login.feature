@@ -9,14 +9,14 @@ Feature: WebDriver University - Login Page
     And I enter a password webdriver123
     And I click on login button
     Then I should be presented with a successful validation info
-
+  @target-this
   Scenario: Validate Unsuccessful Login
     When I enter a username webdriver
     And I enter a password incorrect
     And I click on login button
     Then I should be presented with a unsuccessful validation info
 
-  @target-this
+
   Scenario Outline: Validate Successful & Unsuccessful Login
     When I enter an outlined username <username>
     And I enter an outlined password <password>

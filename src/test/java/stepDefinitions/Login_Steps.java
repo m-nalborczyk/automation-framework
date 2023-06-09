@@ -11,7 +11,7 @@ import stepDefinitions.base.Hooks;
 
 import static driver.DriverFactory.getDriver;
 
-public class Login_Steps extends Hooks {
+public class Login_Steps {
 
     private WebDriver driver = getDriver();
 

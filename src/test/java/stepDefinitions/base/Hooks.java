@@ -7,11 +7,11 @@ import static driver.DriverFactory.getDriver;
 
 public class Hooks {
 
-    @Before("@login")
+    @Before
     public void setup (){
         getDriver();
     }
-    @After("@login")
+    @After
     public void tearDown(){
         cleanupDriver();
     }

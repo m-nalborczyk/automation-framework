@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2fe2569-f591-4854-ba5e-3e146dc02b8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/base/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/properties/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/LICENSE.chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/drivers/LICENSE.chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/drivers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/drivers/geckodriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/base/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/base/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686134775237</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit DriverFactory.java">
+      <created>1686259531329</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686259531329</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +296,8 @@
     <MESSAGE value="commit Login_Steps.java" />
     <MESSAGE value="commit Login page scenario tests" />
     <MESSAGE value="commit Scenario Outline tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Scenario Outline tests" />
+    <MESSAGE value="commit DriverFactory.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit DriverFactory.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
