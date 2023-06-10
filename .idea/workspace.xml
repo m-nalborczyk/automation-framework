@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2fe2569-f591-4854-ba5e-3e146dc02b8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/properties/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/base/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/base/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,24 +42,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/nalbo/git/projects/automation-framework/src/test/resources/features",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nalbo/git/projects/automation-framework/src/test/resources/features&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nalbo\git\projects\automation-framework\src\test\resources\features" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.MainRunner">
+    <configuration name="Feature: Contact_Us" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="automation-framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Contact_Us" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Validate Successful Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -100,27 +122,6 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Validate Successful Submission - Unique Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="automation-framework" />
-      <option name="NAME_FILTER" value="^Validate Successful Submission \- Unique Data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Submission \- Unique Data$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Submission - Unique Data" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="MakeProject" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Validate Successful &amp; Unsuccessful Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -145,35 +146,46 @@
     </configuration>
     <configuration name="MainRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.MainRunner" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Feature: Contact_Us" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful &amp; Unsuccessful Login" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
-      <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Unique Data" />
       <item itemvalue="TestNG.MainRunner" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Feature: Contact_Us" />
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful &amp; Unsuccessful Login" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Unique Data" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686259531329</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit commit config.properties">
+      <created>1686298265533</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686298265533</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,10 +316,16 @@
     <MESSAGE value="commit Login page scenario tests" />
     <MESSAGE value="commit Scenario Outline tests" />
     <MESSAGE value="commit DriverFactory.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit DriverFactory.java" />
+    <MESSAGE value="commit commit config.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit commit config.properties" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/automation_framework$MainRunner.ic" NAME="MainRunner Coverage Results" MODIFIED="1686423036449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>runners.*</FILTER>
+    </SUITE>
   </component>
 </project>

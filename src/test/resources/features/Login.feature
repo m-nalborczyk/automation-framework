@@ -1,15 +1,15 @@
-@login @regression
+@login
 Feature: WebDriver University - Login Page
 
   Background:
     Given I access webdriver university login page
-
+  @tag
   Scenario: Validate Successful Login
     When I enter a username webdriver
     And I enter a password webdriver123
     And I click on login button
     Then I should be presented with a successful validation info
-  @target-this
+
   Scenario: Validate Unsuccessful Login
     When I enter a username webdriver
     And I enter a password incorrect

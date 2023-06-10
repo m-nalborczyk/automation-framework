@@ -7,21 +7,21 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import stepDefinitions.base.Hooks;
+import pageObject.Base_PO;
 
-import static driver.DriverFactory.getDriver;
 
-public class Login_Steps {
+public class Login_Steps extends Base_PO {
 
     private WebDriver driver = getDriver();
 
     @Given("I access webdriver university login page")
     public void i_access_webdriver_university_login_page() {
-    driver.get("https://www.webdriveruniversity.com/Login-Portal/index.html?");
+    navigateTo_URL("https://www.webdriveruniversity.com/Login-Portal/index.html?");
     }
     @When("I enter a username {}")
     public void i_enter_a_username(String username) {
-        driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
+        //driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
+        sendKeys(By.xpath("//input[@type='text']"), username);
     }
     @When("I enter an outlined username {}")
     public void i_enter_an_outlined_username(String username) {
