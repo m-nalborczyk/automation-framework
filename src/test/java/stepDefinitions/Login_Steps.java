@@ -8,37 +8,41 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pageObject.Base_PO;
+import pageObject.Login_PO;
 
 
 public class Login_Steps extends Base_PO {
-
     private WebDriver driver = getDriver();
+
+    private Login_PO login_po;
+
+    public Login_Steps (Login_PO login_po){
+        this.login_po = login_po;
+    }
 
     @Given("I access webdriver university login page")
     public void i_access_webdriver_university_login_page() {
-    navigateTo_URL("https://www.webdriveruniversity.com/Login-Portal/index.html?");
+        login_po.navigateTo_WebDriverUniversity_Login_Page();
     }
     @When("I enter a username {}")
     public void i_enter_a_username(String username) {
-        //driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
-        sendKeys(By.xpath("//input[@type='text']"), username);
+        login_po.setUsername(username);
     }
     @When("I enter an outlined username {}")
     public void i_enter_an_outlined_username(String username) {
-        driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
+        login_po.setUsername(username);
     }
     @When("I enter a password {}")
     public void i_enter_a_password(String password) {
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
+        login_po.setPassword(password);
     }
     @When("I enter an outlined password {}")
     public void i_enter_an_outlined_password(String password) {
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
+        login_po.setPassword(password);
     }
     @When("I click on login button")
     public void i_click_login_btn() {
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
-
+        login_po.clickLoginButton();
     }
     @Then("I should be presented with a successful validation info")
     public void i_should_be_presented_with_a_successful_validation_info() {
