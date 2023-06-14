@@ -25,5 +25,12 @@ public class Login_PO extends Base_PO{
     public void clickLoginButton(){
         waitForElementAndClick(login_Button);
     }
+    public void validateSuccessfulLoginMessage (){
+        waitForAlertAndValidateText("validation succeeded");
+    }
+    public void validateUnsuccessfulLoginMessage(){
+        waitForAlertAndValidateText("validation failed");
+    }
+
 
 }

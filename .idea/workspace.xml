@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2fe2569-f591-4854-ba5e-3e146dc02b8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/Login_PO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/Contact_Us_PO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Login_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Login_PO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686429660199</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit Login_PO.java for object modelling">
+      <created>1686555147042</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686555147042</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,7 +332,8 @@
     <MESSAGE value="commit DriverFactory.java" />
     <MESSAGE value="commit commit config.properties" />
     <MESSAGE value="commit Base_PO.java for custom methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Base_PO.java for custom methods" />
+    <MESSAGE value="commit Login_PO.java for object modelling" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit Login_PO.java for object modelling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

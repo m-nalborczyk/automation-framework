@@ -7,11 +7,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Locale;
 import java.util.Properties;
 
 public class DriverFactory {
@@ -23,8 +20,6 @@ public class DriverFactory {
         }
         return webDriver.get();
     }
-
-
 
     private static WebDriver createDriver(){
         WebDriver driver = null;
