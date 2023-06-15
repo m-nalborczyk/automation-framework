@@ -1,9 +1,9 @@
 package pageObject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import utils.Global_Vars;
 
 public class Contact_Us_PO extends Base_PO{
 
@@ -19,7 +19,7 @@ public class Contact_Us_PO extends Base_PO{
     private @FindBy (xpath = "//div[@id='contact_reply']/h1") WebElement submit_Message;
 
     public void navigateTo_WebdriverUniversity_Contact_Us_Page (){
-        navigateTo_URL("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
+        navigateTo_URL(Global_Vars.WEBDRIVER_UNIVERSITY_HOMEPAGE_URL + "/Contact-Us/contactus.html");
     }
     public void setUnique_FirstName(){
         sendKeys(firstName_TextField, "AutoFN" + generateRandomNumber(5));

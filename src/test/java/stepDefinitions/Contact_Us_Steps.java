@@ -3,17 +3,11 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import pageObject.Base_PO;
 import pageObject.Contact_Us_PO;
 
-
 public class Contact_Us_Steps extends Base_PO {
 
-    private WebDriver driver = getDriver();
     private Contact_Us_PO contact_us_po;
 
     public Contact_Us_Steps(Contact_Us_PO contact_us_po){
