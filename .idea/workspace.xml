@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2fe2569-f591-4854-ba5e-3e146dc02b8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Global_Vars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Contact_Us_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Contact_Us_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Login_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Login_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Contact_Us_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Login_Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
       <recent name="C:\Users\nalbo\git\projects\automation-framework\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainRunner">
+  <component name="RunManager" selected="TestNG.C:/Users/nalbo/git/projects/automation-framework/src/test/java/runners/testng/testng.xml">
     <configuration name="Feature: Contact_Us" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
@@ -66,26 +62,6 @@
       <module name="automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: Contact_Us" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Validate Successful Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="automation-framework" />
-      <option name="NAME_FILTER" value="^Validate Successful Login$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Login$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -141,6 +117,16 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/nalbo/git/projects/automation-framework/src/test/java/runners/testng/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/runners/testng/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <shortenClasspath name="NONE" />
@@ -172,17 +158,17 @@
     <list>
       <item itemvalue="Cucumber Java.Feature: Contact_Us" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful &amp; Unsuccessful Login" />
-      <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
       <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
+      <item itemvalue="TestNG.C:/Users/nalbo/git/projects/automation-framework/src/test/java/runners/testng/testng.xml" />
       <item itemvalue="TestNG.MainRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/nalbo/git/projects/automation-framework/src/test/java/runners/testng/testng.xml" />
         <item itemvalue="TestNG.MainRunner" />
         <item itemvalue="Cucumber Java.Feature: Contact_Us" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful &amp; Unsuccessful Login" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Login" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +293,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686773300231</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit final PO modifications">
+      <created>1686863851691</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686863851691</updated>
+    </task>
+    <task id="LOCAL-00018" summary="commit testng.xml for Jenkins">
+      <created>1687094248891</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687094248891</updated>
+    </task>
+    <task id="LOCAL-00019" summary="commit adding maven-surefire-plugin">
+      <created>1687094290285</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687094290285</updated>
+    </task>
+    <task id="LOCAL-00020" summary="commit MainRunner.java adjust for Jenkins">
+      <created>1687117867990</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687117867990</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +352,11 @@
     <MESSAGE value="commit Base_PO.java for custom methods" />
     <MESSAGE value="commit Login_PO.java for object modelling" />
     <MESSAGE value="commit Contact_Us_PO.java for object modelling" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Contact_Us_PO.java for object modelling" />
+    <MESSAGE value="commit final PO modifications" />
+    <MESSAGE value="commit testng.xml for Jenkins" />
+    <MESSAGE value="commit adding maven-surefire-plugin" />
+    <MESSAGE value="commit MainRunner.java adjust for Jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit MainRunner.java adjust for Jenkins" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
